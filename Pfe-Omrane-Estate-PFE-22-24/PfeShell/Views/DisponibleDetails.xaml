@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.DisponibleDetails"
+             xmlns:local="clr-namespace:PfeShell.ViewModels" BackgroundColor="LightGray">
+    <ContentPage.BindingContext>
+        <local:DisponibleDetailsViewModel/>
+    </ContentPage.BindingContext>
+  
+        <StackLayout >
+            <CollectionView x:Name="listItem"
+                  
+                  ItemSizingStrategy="MeasureAllItems"       
+                  BackgroundColor="Transparent"
+                  >
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid BackgroundColor="LightGray" >
+
+                        <Frame HasShadow="True" Margin="0,10,10,0" BackgroundColor="White" CornerRadius="30"  VerticalOptions="StartAndExpand"
+                       HorizontalOptions="FillAndExpand" Padding="20" >
+                                
+                                <StackLayout  >
+                                
+                                <StackLayout Orientation="Horizontal" >
+                                        <StackLayout  Orientation="Horizontal" >
+                                            <Label Text="Type: " FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                                            <Label Text="{Binding Type.Description}" FontSize="15" TextColor="#6670CC"/>
+                                        </StackLayout>
+                                    <StackLayout HorizontalOptions="EndAndExpand"  Orientation="Horizontal"  >
+                                        <Label Text="Description: "  FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                                        <Label Text="{Binding Description} "   Opacity="0.8" FontSize="15" TextColor="#6670CC"   />
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Orientation="Horizontal" >
+                                        <Label Text="Surface: " FontAttributes="Bold" FontSize="14" HorizontalOptions="Start" TextColor="Black"/>
+                                        <Label Text="{Binding Area}" FontSize="15" HorizontalOptions="Start" TextColor="#FF5151"/>
+                                        </StackLayout>
+                                        <StackLayout HorizontalOptions="EndAndExpand" Orientation="Horizontal" >
+                                        <Label Text="Unité : " FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                                            <Label Text="{Binding ComSaleUnitCost} "  Opacity="0.8" FontSize="15" TextColor="#FF5151"   />
+                                        </StackLayout>
+                                    </StackLayout>
+                                        <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+
+                                    <Label Text="Prix ​​de vente :" FontAttributes="Bold" FontSize="14" TextColor="Black"/>
+                                            <Label Text="{Binding SalePrice} "  Opacity="0.8" FontSize="15" TextColor="#FF5151" />
+                                        </StackLayout>
+
+                                  
+                                </StackLayout>
+
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+  
+</ContentPage>

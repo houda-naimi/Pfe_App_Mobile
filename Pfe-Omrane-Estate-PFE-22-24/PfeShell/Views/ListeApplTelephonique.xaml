@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.ListeApplTelephonique"
+             xmlns:local="clr-namespace:PfeShell.ViewModels"
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+              BackgroundColor="LightGray"
+             >
+    <ContentPage.BindingContext>
+        <local:ListeAppelTeleViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <RefreshView
+        Command="{Binding RefreshCommand}"
+        IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
+        RefreshColor="OrangeRed">
+        <StackLayout>
+            <CollectionView x:Name="listContacts"
+                  ItemsSource="{Binding listeGroup}"
+                  IsGrouped="True"
+                  ItemSizingStrategy="MeasureAllItems"       
+                  RemainingItemsThreshold="1"
+                  RemainingItemsThresholdReachedCommand="{Binding DelayLoadMoreCommand}"
+                  BackgroundColor="Transparent"
+                  SelectionChanged="listContacts_SelectionChanged"
+                  SelectionMode="Single"
+                  >
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="12">
+                            <Label Text="{Binding Key}"  TextColor="OrangeRed"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.GroupHeaderTemplate>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame HasShadow="True" BackgroundColor="Transparent" VerticalOptions="StartAndExpand"
+                       HorizontalOptions="FillAndExpand" Padding="10" CornerRadius="50">
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" >
+     
+                                        <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="4*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <BoxView BackgroundColor="#A0A4C9" Opacity="0.2"/>
+                                            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                                <Label Text="{Binding Time}" TextColor="#6670CC" FontSize="23"
+                                                  HorizontalOptions="Center" Margin="0,-10,0,0" FontAttributes="Bold" />
+                                            </StackLayout>
+                                            <StackLayout Grid.Column="1" Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="Center" Margin="20">
+                                                <Label Text="{Binding CallName}" FontSize="15" TextColor="#6670CC"/>
+                                                <StackLayout>
+                                            <Label Text="{Binding CallNumber} "  Opacity="0.8" FontSize="15" TextColor="#FF5151" Margin="0,-5,0,0"  />
+                                                </StackLayout>
+                                            </StackLayout>
+                                        </Grid>
+      
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+    </RefreshView>
+</ContentPage>

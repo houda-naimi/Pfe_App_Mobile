@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.ProspectInformation"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+             Shell.FlyoutBehavior="Disabled"
+             Shell.PresentationMode="Animated"
+             Shell.NavBarIsVisible="True" Title="Prospect"
+             >
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="5,0,5,0">
+               <!-- <StackLayout HorizontalOptions="Center" Margin="0,40,0,0">
+                    <Label Text="Prospect" TextColor="#6670CC" FontSize="23"></Label>
+                </StackLayout>-->
+                <StackLayout Padding="10">
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="picker" Title="Sélectionner Civilité" TextColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.User}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                            <Entry x:Name="Prenom" Placeholder="Entrer votre prénom" HorizontalOptions="FillAndExpand" FontSize="15"></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.User}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                            <Entry x:Name="Nom" Placeholder="Entrer votre nom" HorizontalOptions="FillAndExpand" FontSize="15"></Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.Phone}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                            <Entry x:Name="numtelf" Keyboard="Numeric" Placeholder="Entrer votre numéro" HorizontalOptions="FillAndExpand" FontSize="15">
+                                <Entry.Behaviors>
+                                    <xct:TextValidationBehavior x:Name="NumTelValidation" MinimumLength="8" MaximumLength="12"
+                                                Flags="ValidateOnValueChanging">
+                                    </xct:TextValidationBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="0">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.Envelope}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                            <Entry Keyboard="Email" x:Name="email" Placeholder="Entrer votre mail" HorizontalOptions="FillAndExpand" FontSize="15">
+                                <Entry.Behaviors>
+                                    <xct:EmailValidationBehavior x:Name="EmailValidation"
+                                                                     Flags="ValidateOnUnfocusing">
+                                    </xct:EmailValidationBehavior>
+                                </Entry.Behaviors>
+                            </Entry>
+                        </StackLayout>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="5,0,0,0">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.List}" FontFamily="FAS" VerticalOptions="Start" TextColor="Orange"></Label>
+                            <Editor Placeholder="Notes" VerticalOptions="Start" 
+                                    HorizontalOptions="FillAndExpand" HeightRequest="80">
+                            </Editor>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20" Padding="40,0,0,0" Margin="0,15,0,30">
+                    <StackLayout >
+                        <Button x:Name="Ajouter" 
+                            Text="Ajouter" 
+                            HorizontalOptions="Start" 
+                           
+                            VerticalOptions="Center" 
+                          Style="{StaticResource AButton}"
+                           
+                            Clicked="Ajouter_Clicked">
+                        </Button>
+                    </StackLayout>
+                    <Button x:Name="PlusDetail" 
+                            Text="+ Détails" 
+                            HorizontalOptions="Center" 
+                            
+                            VerticalOptions="Center" 
+                           Style="{StaticResource AButton}" 
+                          
+                           
+                           
+                            Clicked="PlusDetail_Clicked">
+                    </Button>
+                    <StackLayout>
+
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

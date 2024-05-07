@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.ProspectionInformation"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.PresentationMode="Animated" Title="Prospection">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,0,0,80">
+              <!--  <StackLayout HorizontalOptions="Center" Margin="0,40,0,0">
+                    <Label Text="Prospection" TextColor="#6670CC" FontSize="23"></Label>
+                </StackLayout>-->
+                <StackLayout Padding="10">
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="pickerTranche" 
+                                Title="Sélectionner tranche"
+                                TitleColor="Gray"
+                                FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="pickerKind" 
+                                Title="Sélectionner degrés d'intérêt"
+                                TitleColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="pickerOrigin"
+                                Title="Sélectionner origine"
+                                TitleColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="5,0,0,0">
+                            <Label Text="{x:Static fontAwesome:FontAwesomeIcons.List}" FontFamily="FAS" VerticalOptions="Start" TextColor="Orange"></Label>
+                            <Editor Placeholder="Notes" VerticalOptions="Start" HorizontalOptions="FillAndExpand" HeightRequest="120"></Editor>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="16,60,0,70" Spacing="15">
+                    <StackLayout>
+                        <Button x:Name="Retour" 
+                            Text="Retour" 
+                            HorizontalOptions="Center"  
+                            Style="{StaticResource AButton}"
+                                WidthRequest="100"
+                            VerticalOptions="Start" 
+          
+                            Clicked="Retour_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent">
+                        <Button x:Name="Ajouter" 
+                            Text="Ajouter" 
+                            HorizontalOptions="Center"  
+                             Style="{StaticResource AButton}"
+                            VerticalOptions="Start" 
+       WidthRequest="100"
+                            Clicked="Ajouter_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout>
+                        <Button x:Name="PlusDetails" 
+                            Text="+ Details" 
+                            HorizontalOptions="Center"  
+                            Style="{StaticResource AButton}"
+                            VerticalOptions="Start" 
+                  WidthRequest="100"
+                            Clicked="PlusDetails_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.CreerDossier">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <StackLayout Padding="0" Margin="0">
+                </StackLayout>
+                <StackLayout Margin="15,15,10,0">
+                    <Frame BackgroundColor="White" HasShadow="True" HeightRequest="550" HorizontalOptions="FillAndExpand" >
+                        <StackLayout>
+                            <StackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="CREER DOSSIER" TextColor="Black" FontSize="Medium" FontAttributes="Bold"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <Button
+                                     VerticalOptions="Center"
+                                      Text="Pick a contact"
+                                      TextColor="White"
+                                      FontAttributes="Bold"
+                                      BackgroundColor="Purple"
+                                      CornerRadius="50"
+                                 Clicked="Button_Clicked"/>
+                                </Frame>
+                                <Label FontSize="Large" TextColor="Black" x:Name="LabelInfo"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <Button
+                                     VerticalOptions="Center"
+                                      Text="Pick a File"
+                                      TextColor="White"
+                                      FontAttributes="Bold"
+                                      BackgroundColor="Purple"
+                                      CornerRadius="50"
+                                 Clicked="Button_Clicked_1"/>
+                                </Frame>
+                                <Label FontSize="Large" TextColor="Black" x:Name="LabelInfoFile"/>
+                            </StackLayout>
+                            <StackLayout>
+                                <Frame BackgroundColor="Transparent" BorderColor="DarkGray" Padding="0" Margin="0,20,0,0" CornerRadius="50" HorizontalOptions="FillAndExpand">
+                                    <Button
+                                     VerticalOptions="Center"
+                                      Text="Get Location"
+                                      TextColor="White"
+                                      FontAttributes="Bold"
+                                      BackgroundColor="Purple"
+                                      CornerRadius="50"
+                                 Clicked="Button_Clicked_2"/>
+                                </Frame>
+                                <Label FontSize="Large" x:Name="LabelInfoLocation"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

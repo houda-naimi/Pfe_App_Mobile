@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.App"
+             >
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">white</Color>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup x:Name="CommonStates">
+                            <VisualState x:Name="Normal">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="White" />
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Disabled">
+                                <VisualState.Setters>
+                                    <Setter Property="BackgroundColor" Value="White" />
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <Style x:Key="AButton" TargetType="Button">
+                <Setter Property="TextColor" Value="#6670CC"/>
+                <Setter Property="WidthRequest" Value="130"/>
+                <Setter Property="HeightRequest" Value="38"/>
+                <Setter Property="FontSize" Value="Small"/>
+                <Setter Property="CornerRadius" Value="6"/>
+                <Setter Property="BorderWidth" Value="1"/>
+                <Setter Property="BackgroundColor"  Value="Transparent"/>
+                <Setter Property="BorderColor" Value="#6670CC"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="SearchBarStyle" TargetType="Frame"  >
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="CornerRadius" Value="80"/>
+                <Setter Property="HasShadow" Value="False"/>
+                
+            </Style>
+        </ResourceDictionary>        
+    </Application.Resources>
+</Application>

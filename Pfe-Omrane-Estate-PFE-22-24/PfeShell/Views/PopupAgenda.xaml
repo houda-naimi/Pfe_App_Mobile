@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.PopupAgenda">
+    <Grid HeightRequest="300" VerticalOptions="Center">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+ 
+
+        <Frame Grid.RowSpan="2" HeightRequest="250" VerticalOptions="End" CornerRadius="30" Padding="20,0" BackgroundColor="White">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical" Spacing="20" VerticalOptions="Start" HorizontalOptions="Center">
+                    <Label x:Name="titremsg" FontSize="20"  Padding="10" FontAttributes="Bold" TextColor="#E10555" HorizontalTextAlignment="Center" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Date: " TextColor="#6670CC" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        <Label x:Name="date" TextColor="#363636" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Start Time: " TextColor="#6670CC" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        <Label x:Name="StarTime" TextColor="#363636" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="End Time: " TextColor="#6670CC" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Start"/>
+                        <Label x:Name="EndTime" TextColor="#363636" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                    </StackLayout>  
+                </StackLayout>
+                <StackLayout  VerticalOptions="End" HorizontalOptions="Center" Margin="0,0,0,3"  Orientation="Horizontal">
+                    <Button   Text="Supprimer" CornerRadius="10" TextColor="White" HeightRequest="50" WidthRequest="110" BackgroundColor="#E10555" Clicked="Button_Clicked"/>
+                    <Button Text="Modifier" CornerRadius="10" TextColor="White" HeightRequest="50" WidthRequest="110" BackgroundColor="#E10555" Clicked="Button_Clicked_1"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        
+    </Grid>
+</rg:PopupPage>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.DetailsRec"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+              Shell.FlyoutBehavior="Disabled"
+               Shell.PresentationMode="Animated"
+              Shell.NavBarIsVisible="True"
+             Shell.TabBarIsVisible="False"
+             >
+
+    <ContentPage.Content>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <StackLayout>
+                <StackLayout Padding="5,0,5,0" >
+
+                    <StackLayout>
+                        <Grid    BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Padding="10,25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+
+                                <StackLayout Padding="10" Spacing="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="DETAILS" TextColor="OrangeRed" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center" />
+                                    <Label Text="RECLAMATION" Margin="0,-5,0,0" TextColor="OrangeRed" FontAttributes="Bold"  Opacity="0.5" FontSize="30"
+                                               HorizontalOptions="Center"/>
+
+
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+
+
+                    </StackLayout>
+
+                    <StackLayout Spacing="10"   Padding="30,50,15,30" >
+
+                        <Frame CornerRadius="20"  >
+                            <StackLayout Orientation="Horizontal" Spacing="10"  >
+                                <Label  FontSize="Medium" Text="{x:Static fontAwesome:FontAwesomeIcons.User}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                                <Label  x:Name="idRec"  HorizontalOptions="FillAndExpand" FontSize="Medium" >
+
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="trv.png" HeightRequest="30" 
+                                       HorizontalOptions="Center"  />
+                                <Label  x:Name="nomClient"  HorizontalOptions="FillAndExpand" FontSize="Medium" >
+
+
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="vocation.png" HeightRequest="25" HorizontalOptions="Center"/>
+                                <Label  x:Name="adresse"  HorizontalOptions="FillAndExpand" FontSize="Medium" >
+
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="info.png" HeightRequest="25" HorizontalOptions="Center"/>
+
+                                <Label x:Name="descriptionRec"  HorizontalOptions="FillAndExpand" FontSize="Medium">
+
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="garantie.png" HeightRequest="25" HorizontalOptions="Center"/>
+
+                                <Label x:Name="TypeRec"  HorizontalOptions="FillAndExpand" FontSize="Medium">
+
+                                </Label>
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

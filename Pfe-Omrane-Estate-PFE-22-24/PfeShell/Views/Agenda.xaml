@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+             x:Class="PfeShell.Views.Agenda"
+             xmlns:local="clr-namespace:PfeShell.ViewModels"
+              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+
+        <RelativeLayout VerticalOptions="FillAndExpand">
+        
+            <syncfusion:SfCalendar.BindingContext>
+                <local:CalendarViewModel/>
+            </syncfusion:SfCalendar.BindingContext>
+            <syncfusion:SfCalendar Margin="20,0"  x:Name="calendar" ViewMode="MonthView" VerticalOptions="FillAndExpand" ShowInlineEvents="True" 
+                                    InlineViewMode="Agenda" AgendaViewHeight="300" MaximumEventIndicatorCount="3" 
+                                    DataSource="{Binding CalendarInlineEvents}" InlineItemTapped="Calendar_InlineItemTapped">
+            </syncfusion:SfCalendar>
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" x:Name="stpop"></StackLayout>
+            <sfPopup:SfPopupLayout x:Name="popupLayout">
+                <sfPopup:SfPopupLayout.PopupView>
+                    <sfPopup:PopupView HeightRequest="250" WidthRequest="250" HeaderTitle="Events">
+                        <sfPopup:PopupView.ContentTemplate>
+                            <DataTemplate>
+                                <StackLayout>
+                                <Label Text="title" x:Name="title"></Label>
+                                <Label ></Label>
+                                <Label ></Label>
+                                </StackLayout>
+                            </DataTemplate>
+                        </sfPopup:PopupView.ContentTemplate>
+                    </sfPopup:PopupView>
+                </sfPopup:SfPopupLayout.PopupView>
+            </sfPopup:SfPopupLayout>
+          
+            <StackLayout
+            Orientation="Horizontal"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Width,
+                                                              Factor=0.5,
+                                                              Constant=120}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Height,
+                                                              Factor=1,
+                                                              Constant=-600}"
+            VerticalOptions="End">
+                <ImageButton
+                Margin="0,0,15,15"
+                BackgroundColor="Transparent"
+                HeightRequest="50"
+                HorizontalOptions="End"
+                Source="addevent.png"
+                WidthRequest="50" Clicked="addevent_Clicked"/>
+            </StackLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.AjouterReclamation"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+               xmlns:xct="http://xamarin.com/schemas/2020/toolkit" 
+              Shell.FlyoutBehavior="Disabled"
+               Shell.PresentationMode="Animated"
+              Shell.NavBarIsVisible="True"
+             Shell.TabBarIsVisible="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Padding="5,0,5,0">
+
+                    <StackLayout>
+                        <Grid    BackgroundColor="White" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Padding="10,25" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+
+                                <StackLayout Padding="10" Spacing="0" HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="OMRAN" TextColor="OrangeRed" FontSize="45" FontAttributes="Bold" HorizontalOptions="Center" />
+                                    <Label Text="ESTATE" Margin="0,-5,0,0" TextColor="OrangeRed" FontAttributes="Bold"  Opacity="0.5" FontSize="30"
+                                               HorizontalOptions="Center"/>
+
+
+                                </StackLayout>
+                            </Grid>
+                        </Grid>
+
+
+                    </StackLayout>
+                    <StackLayout Padding="10" Spacing="10">
+
+
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="{x:Static fontAwesome:FontAwesomeIcons.User}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                                <Entry  x:Name="idclientTxt"  Placeholder="nom client"  HorizontalOptions="FillAndExpand" >
+
+                                </Entry>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="{x:Static fontAwesome:FontAwesomeIcons.Phone}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                                <Entry x:Name="numtelf" Placeholder="enter num téléphone" HorizontalOptions="FillAndExpand">
+
+                                </Entry>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Label Text="{x:Static fontAwesome:FontAwesomeIcons.Calendar}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+
+                                <DatePicker
+                                            x:Name="dateRecTxt"
+                                            HeightRequest="40"
+                                            FontSize="16"
+                                            TextColor="Black"
+                                            Format="dd MMM yyyy"
+                                            HorizontalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </Frame>
+
+
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                <Label Text="{x:Static fontAwesome:FontAwesomeIcons.InfoCircle}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                                <Entry x:Name="descriptionTxt" Placeholder="description" HorizontalOptions="FillAndExpand">
+
+                                </Entry>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                <Label Text="{x:Static fontAwesome:FontAwesomeIcons.Home}" FontFamily="FAS" VerticalOptions="Center" TextColor="Orange"></Label>
+                                <Entry x:Name="adresseTxt" Placeholder="adresse" HorizontalOptions="FillAndExpand">
+
+                                </Entry>
+                            </StackLayout>
+                        </Frame>
+                        <Frame CornerRadius="20">
+                            <StackLayout Orientation="Horizontal" Spacing="0">
+                                <Picker x:Name="pickerCatg" Title="Sélectioné catégorie"></Picker>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Padding="50,0,0,0" Margin="0,60,0,30">
+                        <StackLayout Margin="0,10,80,0">
+                            <Button x:Name="Ajouter" 
+                            Text="Valider" 
+                            HorizontalOptions="Center" 
+                            WidthRequest="90" 
+                            VerticalOptions="Center" 
+                            BackgroundColor="White" 
+                            TextColor="Black" 
+                            BorderWidth="2" 
+                            BorderColor="OrangeRed"
+                                    
+                                    Clicked="Enregister_Clicked"
+                                
+                            >
+                            </Button>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

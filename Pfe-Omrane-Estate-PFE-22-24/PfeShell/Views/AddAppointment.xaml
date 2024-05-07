@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+x:Class="PfeShell.Views.AddAppointment"
+    xmlns:local="clr-namespace:PfeShell.ViewModels"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+Title="Ajouter Rendez_vous" >
+    <ContentPage.Content>
+        <StackLayout
+Spacing="8"
+Padding="20"
+Orientation="Vertical">
+            <Label
+Text="Date"
+TextColor="Gray"
+FontSize="14"
+HorizontalTextAlignment="Start"
+VerticalTextAlignment="Center" />
+            <DatePicker
+x:Name="datePicker"
+HeightRequest="40"
+FontSize="16"
+TextColor="Black"
+Format="dd MMM yyyy"
+HorizontalOptions="FillAndExpand" />
+            <Label
+Margin="0,10,0,0"
+Text="Heure début"
+TextColor="Gray"
+FontSize="14"
+HorizontalTextAlignment="Start"
+VerticalTextAlignment="Center" />
+            <TimePicker
+x:Name="timePicker"
+HeightRequest="40"
+FontSize="16"
+TextColor="Black"
+Format="hh:mm"
+HorizontalOptions="FillAndExpand" />
+            <Label
+Margin="0,10,0,0"
+Text="Heure fin"
+TextColor="Gray"
+FontSize="14"
+HorizontalTextAlignment="Start"
+VerticalTextAlignment="Center" />
+            <TimePicker
+x:Name="timePickerE"
+HeightRequest="40"
+FontSize="16"
+TextColor="Black"
+Format="hh:mm "
+HorizontalOptions="FillAndExpand" />
+
+            <Label
+Margin="0,10,0,0"
+Text="Titre"
+TextColor="Gray"
+FontSize="14"
+HorizontalTextAlignment="Start"
+VerticalTextAlignment="Center" />
+            <Entry
+x:Name="title"
+TextColor="Black"
+FontSize="16"
+HeightRequest="40"
+ReturnType="Next"
+HorizontalOptions="FillAndExpand" />
+            <ContentView.Resources>
+                <local:ColorToChipConverter x:Key="ColorsToChips"/>
+            </ContentView.Resources>
+            <buttons:SfChipGroup  SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                                Type="Choice" ChipBorderWidth="1"
+				                 ItemsSource="{Binding Colors, Converter={StaticResource ColorsToChips}}">
+                <buttons:SfChipGroup.ChipLayout>
+                    <FlexLayout 
+						HorizontalOptions="Start" 
+						VerticalOptions="Center" 
+						Direction="Row" 
+						Wrap="Wrap"
+                        BackgroundColor="{Binding SelectedColor, Mode=TwoWay}"
+						JustifyContent="Center"
+						AlignContent="Center" 
+						AlignItems="Center"/>
+                </buttons:SfChipGroup.ChipLayout>
+            </buttons:SfChipGroup>
+            <Button
+Text="Valider"
+TextColor="White"
+FontSize="14"
+CornerRadius="3"
+HeightRequest="40"
+VerticalOptions="EndAndExpand"
+Clicked="Done_Clicked"
+BackgroundColor="Teal" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

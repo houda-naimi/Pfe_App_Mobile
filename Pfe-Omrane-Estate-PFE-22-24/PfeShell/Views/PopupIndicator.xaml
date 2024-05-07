@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.PopupIndicator"
+             xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+    <Grid HeightRequest="265" VerticalOptions="Start">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.RowSpan="2" HeightRequest="220" VerticalOptions="End" CornerRadius="30" Padding="20,0" BackgroundColor="White">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Image    Source="popup.png" HorizontalOptions="Center" VerticalOptions="Start" Aspect="Fill" Margin="0,0,0,0" HeightRequest="80" WidthRequest="80" />
+                <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label x:Name="titremsg" Text="Connexion au serveur"  FontSize="20" FontAttributes="Bold" TextColor="#E10555" HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <ActivityIndicator Grid.Row="1" x:Name="Activity" IsRunning="{Binding IsBusy}" HorizontalOptions="Center" VerticalOptions="Center" />
+    </Grid>
+</rg:PopupPage>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="PfeShell.Views.Disponible"
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:controls="clr-namespace:PfeShell.Controls"
+             xmlns:local="clr-namespace:PfeShell.ViewModels"
+             mc:Ignorable="d" BackgroundColor="LightGray"
+             >
+    <ContentPage.BindingContext>
+        <local:DisponibleViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    
+
+        <ContentPage.Resources>
+            
+            <ResourceDictionary>
+                <Style x:Key="NameLabel" TargetType="Label">
+                    <Setter Property="FontSize" Value="18" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#6670CC" />
+                </Style>
+
+                <Style x:Key="LabelStyle" TargetType="Label">
+                    <Setter Property="FontSize" Value="14" />
+                </Style>
+
+                <Style x:Key="imageLableStackLayout" TargetType="StackLayout">
+                    <Setter Property="Orientation" Value="Horizontal" />
+                </Style>
+
+                <Style x:Key="detailsStackLayout" TargetType="StackLayout">
+                    <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                    <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                    <Setter Property="Spacing" Value="2" />
+                </Style>
+
+                <Style x:Key="imageStyle" TargetType="Image">
+                    <Setter Property="WidthRequest" Value="8" />
+                    <Setter Property="HeightRequest" Value="8" />
+                </Style>
+
+                <Style x:Key="profileImageStyle" TargetType="Image">
+                    <Setter Property="WidthRequest" Value="80" />
+                    <Setter Property="HeightRequest" Value="60" />
+                    <Setter Property="Aspect" Value="AspectFit" />
+                </Style>
+
+                <Style x:Key="profileImageFrameStyle" TargetType="Frame">
+                    <Setter Property="CornerRadius" Value="5" />
+                    <Setter Property="Margin" Value="0" />
+                    <Setter Property="Padding" Value="0" />
+                    <Setter Property="IsClippedToBounds" Value="True" />
+                </Style>
+
+                <Style x:Key="FrameCardViewStyle" TargetType="Frame">
+                    <Setter Property="CornerRadius" Value="15" />
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="Padding" Value="5" />
+                    <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                    <Setter Property="OutlineColor" Value="LightGray" />
+                    <Setter Property="BorderColor" Value="LightGray" />
+                    <Setter Property="HasShadow" Value="True" />
+                </Style>
+
+                <Style x:Key="itemsCardViewStackLayoutStyle" TargetType="StackLayout">
+                    <Setter Property="Margin" Value="5" />
+                    <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                    <Setter Property="Spacing" Value="8" />
+                </Style>
+
+                <Style x:Key="itemsInsideCardViewStackLayoutStyle" TargetType="StackLayout">
+                    <Setter Property="Orientation" Value="Horizontal" />
+                    <Setter Property="Spacing" Value="8" />
+                </Style>
+
+
+
+
+
+            <extensions:StateToBooleanConverter x:Key="StateToBooleanConverter" />
+            <ResourceDictionary>
+                <Style TargetType="controls:SkeletonView">
+                    <Setter Property="BackgroundColor" Value="#E4E4E4"/>
+                    <Setter Property="CornerRadius" Value="15" />
+                    <Setter Property="HorizontalOptions" Value="Start" />
+                </Style>
+
+                <Style TargetType="BoxView" x:Key="SeparatorLine">
+                    <Setter Property="Color" Value="Gray"/>
+                    <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                    <Setter Property="HeightRequest" Value="1" />
+                </Style>
+
+                <DataTemplate  x:Key="EmptyUserTemplate">
+
+                    <Frame HasShadow="True" BackgroundColor="#F7F7F7"  CornerRadius="15"  HeightRequest="120" 
+                       >
+                        <Grid ColumnDefinitions="Auto"
+                          RowDefinitions="Auto, Auto"
+                          RowSpacing="10"
+                        >
+
+                        
+                            <StackLayout  Grid.Column="0"
+                                                   Grid.Row="0">
+                                <controls:SkeletonView 
+                                    VerticalOptions="Start" 
+                                    HorizontalOptions="Start"
+                                                   HeightRequest="40"
+                                                   WidthRequest="300"
+                                              />
+                                <controls:SkeletonView 
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="Start"
+                                                   HeightRequest="80"
+                                                   WidthRequest="150"
+                                              />
+
+                            </StackLayout>
+
+                            <BoxView 
+                                     Grid.Column="0"
+                                     BackgroundColor="White"
+                                     Grid.Row="3"
+                                     Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Frame>
+
+                </DataTemplate>
+            </ResourceDictionary>
+        </ResourceDictionary>
+        </ContentPage.Resources>
+        <ContentPage.Content>
+        <StackLayout>
+            <StackLayout extensions:StateLayout.CurrentState="{Binding CurrentState}"
+                 extensions:StateLayout.AnimateStateChanges="False">
+
+                <extensions:StateLayout.StateViews>
+                    <extensions:StateView StateKey="Loading"
+                            RepeatCount="6"
+                            Template="{StaticResource EmptyUserTemplate}">
+                    </extensions:StateView>
+                </extensions:StateLayout.StateViews>
+            </StackLayout>
+
+            <StackLayout 
+            VerticalOptions="Start">
+                    <Grid  HorizontalOptions="Center" Margin="20,10,20,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="65"  />
+                        </Grid.RowDefinitions>
+                        <Frame Grid.Row="0" Style="{StaticResource SearchBarStyle}" >
+                            <SearchBar x:Name="search" 
+                                   FontSize="15" BackgroundColor="Transparent" Placeholder="Chercher" 
+                                   CancelButtonColor="#6670CC"   PlaceholderColor="#6670CC" 
+                                   HorizontalTextAlignment="Center" TextChanged="search_TextChanged" >
+                            </SearchBar>
+                        </Frame>
+                    </Grid>
+                </StackLayout>
+            <RefreshView
+        Command="{Binding RefreshCommand}"
+        IsRefreshing="{Binding IsBusy , Mode=TwoWay}"
+        RefreshColor="OrangeRed">
+
+                <CollectionView x:Name="listDisponible" ItemsSource="{Binding detail}" 
+                        >
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Spacing="8" HeightRequest="200">
+                                <Frame Style="{StaticResource FrameCardViewStyle}">
+                                    <StackLayout Style="{StaticResource itemsCardViewStackLayoutStyle}">
+                                        <StackLayout Style="{StaticResource itemsInsideCardViewStackLayoutStyle}">
+                                            <StackLayout>
+                                                <Frame HeightRequest="250" WidthRequest="500" BorderColor="#6670CC">
+                                                    <Label Text="{Binding TrancheName}"  Style="{StaticResource NameLabel}" />
+                                                </Frame>
+                                                <CollectionView  ItemsSource="{Binding categories}" 
+                                                            SelectionChanged="Categories_SelectionChanged"
+                                                             SelectionMode="Single"
+                                                             >
+                                                    <CollectionView.ItemsLayout>
+                                                        <LinearItemsLayout Orientation="Horizontal" />
+                                                    </CollectionView.ItemsLayout>
+                                                    <CollectionView.ItemTemplate>
+                                                        <DataTemplate >
+
+                                                            <StackLayout Spacing="20">
+                                                                <Frame Margin="10,0" CornerRadius="15" HasShadow="True" BorderColor="#FF5151" >
+                                                                    <StackLayout>
+                                                                        <Label Text="{Binding NameCategorie}" TextColor="#FF5151" FontSize="15"  />
+                                                                        <Label Text="{Binding ItemCount}" HorizontalOptions="End" TextColor="Black" FontSize="15" />
+                                                                    </StackLayout>
+                                                                </Frame>
+                                                            </StackLayout>
+
+                                                        </DataTemplate>
+                                                    </CollectionView.ItemTemplate>
+                                                </CollectionView>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+        </StackLayout>
+            
+        </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.Test"
+              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms">
+    <ContentPage.Content>
+      
+
+                <StackLayout xct:StateLayout.CurrentState="{Binding CurrentState}">
+                    <xct:StateLayout.StateViews>
+                        <xct:StateView StateKey="Loading" RepeatCount="3">
+                            <xct:StateView.Template>
+                                <DataTemplate>
+                                    <StackLayout Spacing="8">
+                                        <BoxView CornerRadius="8" HeightRequest="40" BackgroundColor="#CCCCCC" WidthRequest="120" />
+                                        <BoxView CornerRadius="8" HeightRequest="40" BackgroundColor="#CCCCCC" WidthRequest="200" />
+                                    </StackLayout>
+                                </DataTemplate>
+                            </xct:StateView.Template>
+                        </xct:StateView>
+                    </xct:StateLayout.StateViews>
+                </StackLayout>
+
+                
+          
+        
+    </ContentPage.Content>
+</ContentPage>

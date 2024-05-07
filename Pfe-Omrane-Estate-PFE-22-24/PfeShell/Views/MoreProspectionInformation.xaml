@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.MoreProspectionInformation"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             Shell.FlyoutBehavior="Disabled"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             Shell.PresentationMode="Animated" Title="Prospection">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,0,0,80">
+              <!--  <StackLayout HorizontalOptions="Center" Margin="0,40,0,0">
+                    <Label Text="Prospection" TextColor="#6670CC" FontSize="23"></Label>
+                </StackLayout>-->
+                <StackLayout Padding="10">
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="Budget" 
+                                Title="Sélectionner budget"
+                                TitleColor="Gray"
+                                FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="modePaiement"
+                                Title="Sélectionner mode de paiement"
+                                TitleColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="utilisation"
+                                Title="Sélectionner utilisation"
+                                TitleColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                    <Frame CornerRadius="20">
+                        <Picker x:Name="article"
+                                Title="Sélectionner article"
+                                TitleColor="Gray" FontSize="15"></Picker>
+                    </Frame>
+                </StackLayout>
+                <StackLayout>
+                    <Frame>
+                        <combobox:SfComboBox
+                    x:Name="comboBoxCat" Text="Sélectionner catégorie" Watermark="Sélectionner Type" 
+                            TextColor="Gray" MultiSelectMode="Token" DataSource="{Binding listCat}" TokensWrapMode="Wrap"    SelectedItem="{Binding SelectedItem}"
+                        >
+                            
+                        </combobox:SfComboBox>
+                    </Frame>
+                    <Frame>
+                        <combobox:SfComboBox
+                     x:Name="comboBoxTypes" Text="Sélectionner type" TextColor="Gray" MultiSelectMode="Token" TokensWrapMode="Wrap" SelectedItem="{Binding SelectedType}"
+                    Watermark="Sélectionner catégorie"
+                        />
+                    </Frame>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="20" Padding="35,0,0,0" Margin="10,30,0,30">
+                    <StackLayout>
+                        <Button x:Name="Retour" 
+                            Text="Retour" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Style="{StaticResource AButton}"
+                            Clicked="Retour_Clicked"></Button>
+                    </StackLayout>
+                    <StackLayout BackgroundColor="Transparent" >
+                        <Button x:Name="Ajouter" 
+                            Text="Ajouter" 
+                            HorizontalOptions="Start" 
+                            VerticalOptions="Center" 
+                            Style="{StaticResource AButton}"
+                            Clicked="Ajouter_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

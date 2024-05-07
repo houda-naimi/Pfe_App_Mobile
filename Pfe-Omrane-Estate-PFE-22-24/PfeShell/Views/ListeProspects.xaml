@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PfeShell.ViewModels"
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d" BackgroundColor="LightGray"
+             xmlns:controls="clr-namespace:PfeShell.Controls"
+             x:Class="PfeShell.Views.ListeProspects">
+    <ContentPage.BindingContext>
+        <local:ListProspectsViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="logout.png" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <extensions:StateToBooleanConverter x:Key="StateToBooleanConverter" />
+        <ResourceDictionary>
+            <Style TargetType="controls:SkeletonView">
+                <Setter Property="BackgroundColor" Value="#E4E4E4"/>
+                <Setter Property="CornerRadius" Value="15" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+            <Style TargetType="BoxView" x:Key="SeparatorLine">
+                <Setter Property="Color" Value="Gray"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+                <Setter Property="HeightRequest" Value="1" />
+            </Style>
+
+            <DataTemplate  x:Key="EmptyUserTemplate">
+
+                <Frame HasShadow="True" BackgroundColor="#F7F7F7"  CornerRadius="15"  HeightRequest="60" Margin="15,15,15,0"
+                       >
+                    <Grid ColumnDefinitions="Auto, *"
+                          RowDefinitions="Auto, Auto"
+                          ColumnSpacing="30"
+                          RowSpacing="10"
+                          Padding="0,10">
+
+                        <controls:SkeletonView Grid.Column="0"
+                                                   Grid.Row="0"
+                                                   Grid.RowSpan="2"
+                                                  
+                                                   HeightRequest="50"
+                                                   WidthRequest="50"
+                                                   HorizontalOptions="Start"
+                                                   VerticalOptions="Start">
+                            <controls:SkeletonView.Clip>
+                                <EllipseGeometry
+                                                Center="25,25"
+                                                RadiusX="25"
+                                                RadiusY="25"/>
+                            </controls:SkeletonView.Clip>
+
+                        </controls:SkeletonView>
+                            <StackLayout Margin="0,5,0,0" Grid.Column="1"
+                                                   Grid.Row="0">
+                                <controls:SkeletonView 
+                                    VerticalOptions="Center" 
+                                    HorizontalOptions="Start"
+                                                   HeightRequest="16"
+                                                   WidthRequest="150"
+                                              />
+
+                        <controls:SkeletonView 
+                            VerticalOptions="End" 
+                            HorizontalOptions="Start"
+                                                   HeightRequest="16"
+                                                   WidthRequest="150"
+                                             />
+                            </StackLayout>
+
+                            <BoxView 
+                                     Grid.Column="0"
+                                     BackgroundColor="White"
+                                     Grid.Row="3"
+                                     Grid.ColumnSpan="2"/>
+                    </Grid>
+                </Frame>
+              
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+   
+    
+    <StackLayout>
+
+        <StackLayout extensions:StateLayout.CurrentState="{Binding CurrentState}"
+                 extensions:StateLayout.AnimateStateChanges="False">
+
+            <extensions:StateLayout.StateViews>
+                <extensions:StateView StateKey="Loading"
+                            RepeatCount="8"
+                            Template="{StaticResource EmptyUserTemplate}">
+                </extensions:StateView>
+            </extensions:StateLayout.StateViews>
+        </StackLayout>
+
+
+        <StackLayout 
+            VerticalOptions="Start">
+            <Grid  HorizontalOptions="Center" Margin="20,10,20,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"  />
+                </Grid.RowDefinitions>
+                <Frame Grid.Row="0" Style="{StaticResource SearchBarStyle}" >
+                    <SearchBar x:Name="search" 
+                                   FontSize="15" BackgroundColor="Transparent" Placeholder="Chercher" 
+                                   CancelButtonColor="#6670CC"   PlaceholderColor="#6670CC" 
+                                   HorizontalTextAlignment="Center" TextChanged="search_TextChanged" >
+                    </SearchBar>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    <RelativeLayout VerticalOptions="FillAndExpand">
+        <RefreshView
+        Command="{Binding RefreshCommand}"
+        IsRefreshing="{Binding IsBusy , Mode=TwoWay}"
+        RefreshColor="OrangeRed">
+
+            <StackLayout Margin="20,0" >
+                <CollectionView   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+                  x:Name="listprospects" ItemsSource="{Binding prospectsList, Mode=TwoWay}" RemainingItemsThreshold="1" 
+                                    RemainingItemsThresholdReachedCommand="{Binding LoadMoreCommand}" >
+
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Vertical" ItemSpacing="20"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame HasShadow="True" BackgroundColor="Transparent" CornerRadius="15" VerticalOptions="StartAndExpand"
+                       HorizontalOptions="FillAndExpand" Padding="0">
+                                <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                                    <extensions:Expander x:Name="MainExpander" Tapped="MainExpander_Tapped" 
+                                             CollapseAnimationLength="500">
+                                        <extensions:Expander.Header>
+                                            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="3*"/>
+                                                    <ColumnDefinition Width="2"/>
+                                                </Grid.ColumnDefinitions>
+                                                <BoxView BackgroundColor="White" Opacity="0.2"/>
+                                                <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+                                                    <Image Source="icon.png" />
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Margin="20">
+                                                    <StackLayout  Orientation="Horizontal">
+                                                        <Label  x:Name="prenom" Text="{Binding LastName}" FontSize="18" TextColor="#6670CC"/>
+                                                        <Label  x:Name="nom" Text="{Binding FirstName}"  FontSize="18" TextColor="#6670CC"/>
+                                                    </StackLayout>
+                                                    <StackLayout >
+                                                        <Label x:Name="numtel" Text="{Binding Mobile}"  Opacity="0.8" FontSize="15"  
+                                                                         TextColor="#FF5151" Margin="0,-5,0,0"  />
+                                                    </StackLayout>
+                                                </StackLayout>
+                                            </Grid>
+                                        </extensions:Expander.Header>
+                                        <Grid  HorizontalOptions="FillAndExpand" HeightRequest="60">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+
+                                            </Grid.ColumnDefinitions>
+                                            <Grid x:Name="DetailsView" Grid.Column="0" BackgroundColor="White" Padding="10" IsVisible="False">
+                                                <StackLayout Grid.Column="0" Spacing="0">
+                                                    <ImageButton Source="call.png" BackgroundColor="Transparent"
+                                                                        Clicked="callAction"></ImageButton>
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="1" Spacing="0" >
+                                                    <ImageButton Source="msg.png" Clicked="sendMsgAction" BackgroundColor="Transparent"  />
+                                                </StackLayout>
+                                                <StackLayout Grid.Column="2" Spacing="0">
+                                                    <ImageButton Source="info.png" Clicked="btnInfo" BackgroundColor="Transparent"  />
+                                                </StackLayout>
+                                            </Grid>
+
+                                        </Grid>
+                                    </extensions:Expander>
+
+                                </Grid>
+
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+            </StackLayout>
+            
+            
+        </RefreshView>
+        <StackLayout
+            Orientation="Horizontal"
+            RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Width,
+                                                              Factor=0.5,
+                                                              Constant=110}"
+            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                                              Property=Height,
+                                                              Factor=1,
+                                                              Constant=-300}"
+            VerticalOptions="End">
+            <ImageButton
+                Margin="0,0,15,15"
+                BackgroundColor="Transparent"
+                HeightRequest="60"
+                HorizontalOptions="End"
+                Source="addevent.png"
+                WidthRequest="60" Clicked="ImageButton_Clicked_1"/>
+        </StackLayout>
+
+    </RelativeLayout>
+    </StackLayout>
+</ContentPage>

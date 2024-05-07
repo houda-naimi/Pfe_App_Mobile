@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.ProspectDetails"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+             xmlns:extensions="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:cardView="clr-namespace:CardView;assembly=CardView"
+             mc:Ignorable="d" BackgroundColor="LightGray">
+  
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="detail.jpg"  extensions:CornerRadiusEffect.CornerRadius="50" Aspect="Fill" HeightRequest="250" VerticalOptions="StartAndExpand"/>
+
+        <StackLayout Orientation="Vertical" Margin="0,20" HorizontalOptions="Center" VerticalOptions="Center">
+            <StackLayout Orientation="Horizontal" Margin="0,10" HorizontalOptions="Center" VerticalOptions="Center">
+                <Label   x:Name="admTitle" />
+                <Label FontAttributes="Bold" TextColor="#FF5151" FontSize="18" x:Name="lastName"/>
+                <Label  FontAttributes="Bold" TextColor="#FF5151" FontSize="18" x:Name="firstName"/>
+            </StackLayout>
+
+            <Label x:Name="Email" FontAttributes="Bold" TextColor="#6670CC" Opacity="0.9" FontSize="18"/>
+            <Label x:Name="mobile" FontAttributes="Bold" HorizontalOptions="Center" Opacity="0.9" Padding="10" TextColor="#6670CC" FontSize="18"/>
+        </StackLayout>
+
+        <Frame Grid.Row="1" HasShadow="True" CornerRadius="30" Margin="20,-40,20,0" Padding="0" HeightRequest="60" VerticalOptions="Start">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <ImageButton  Source="crayon.png" HeightRequest="25" BackgroundColor="Transparent" HorizontalOptions="Center" Clicked="modifier_Clicked"/>
+                </StackLayout>
+                <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <ImageButton Source="planificateur.png" BackgroundColor="Transparent" Clicked="action_Clicked" HeightRequest="25" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
+                    <ImageButton Source="addevent.png" BackgroundColor="Transparent" Clicked="ajouter_prospection" HeightRequest="25" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+        </Frame>
+        <CollectionView x:Name="ListProspection" ItemsSource="{Binding listProspections }"  
+                  Grid.Row="3" Margin="20,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame HasShadow="True" BackgroundColor="Transparent" VerticalOptions="StartAndExpand"
+                       HorizontalOptions="FillAndExpand" Padding="10" CornerRadius="50">
+                        <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" >
+
+                            <Grid HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="4*"/>
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="#A0A4C9" Opacity="0.2"/>
+                                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                                    <Label Text="{Binding DateProspection,StringFormat='{0:ddd}'}" TextColor="#6670CC" FontSize="13"
+                                                  HorizontalOptions="Center" FontAttributes="Bold" />
+                                    <Label Text="{Binding DateProspection,StringFormat='{0:MM}'}" TextColor="#FF5151" FontSize="26"
+                                                  HorizontalOptions="Center" Margin="0,-10,0,0" FontAttributes="Bold" />
+                                    <Label Text="{Binding DateProspection,StringFormat='{0:yyy}'}" TextColor="#6670CC" FontSize="13"
+                                                  HorizontalOptions="Center" Margin="0,-10,0,0" FontAttributes="Bold" />
+                                </StackLayout>
+                                    <StackLayout   Grid.Column="1" Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="Center" Margin="20">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding TrancheName}" FontSize="15" TextColor="#6670CC"/>
+                                      <!--  <ImageButton  Source="crayon.png" Clicked="ImageButton_Clicked" HeightRequest="25" />
+                                    --></StackLayout>
+                                   
+                                    <StackLayout>
+                                        <Label Text="{Binding CategorieName} "  Opacity="0.8" FontSize="15" TextColor="#FF5151" Margin="0,-5,0,0"  />
+                                    </StackLayout>
+                                    <StackLayout>
+                                        <Label Text="{Binding TypeName} "  Opacity="0.8" FontSize="15" TextColor="#FF5151" Margin="0,-5,0,0"  />
+                                    </StackLayout>
+
+                                </StackLayout>
+                            </Grid>
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+        
+
+
+
+
+    </Grid>
+</ContentPage>

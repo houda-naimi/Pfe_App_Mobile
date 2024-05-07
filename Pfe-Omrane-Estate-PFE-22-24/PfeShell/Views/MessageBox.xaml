@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:rg="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.MessageBox">
+    <Grid HeightRequest="200" VerticalOptions="End">
+
+        <Grid.RowDefinitions>
+    
+        <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+       
+        <Frame Grid.RowSpan="2" HeightRequest="220" VerticalOptions="End" CornerRadius="30" Padding="20,0" BackgroundColor="White">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+
+                <Image    Source="popup.png" HorizontalOptions="Center" VerticalOptions="Start" Aspect="Fill" Margin="0,0,0,0" HeightRequest="80" WidthRequest="80" />
+
+                <StackLayout Orientation="Vertical" Spacing="10" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label x:Name="titremsg" FontSize="20" FontAttributes="Bold" TextColor="#E10555" HorizontalTextAlignment="Center" />
+                    <Label x:Name="bodymsg" TextColor="#363636" FontSize="15" HorizontalTextAlignment="Center"/>
+                </StackLayout>  
+            </Grid>
+        </Frame>
+
+        <Button Grid.Row="1" Text="OK" TextColor="White" HeightRequest="45" BackgroundColor="#E10555" Clicked="Button_Clicked"/>
+    </Grid>
+</rg:PopupPage>

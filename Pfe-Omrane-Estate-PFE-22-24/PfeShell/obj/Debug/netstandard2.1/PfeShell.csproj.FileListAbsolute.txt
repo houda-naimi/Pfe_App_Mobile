@@ -1,0 +1,220 @@
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.deps.json
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.dll
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.dll
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.pdb
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.xml
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.AssemblyReference.cache
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Controls\ActivityButton.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AddAppointment.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AffichReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Agenda.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjoutDossierReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjouterReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Authentification.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\CreerDossier.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsPage.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsRec.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Disponible.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DisponibleDetails.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\EcheancePage.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeApplTelephonique.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeProspects.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Login.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Maps.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MessageBox.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MoreProspectionInformation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupAgenda.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupIndicator.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectDetails.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectInformation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectionInformation.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Test.xaml.g.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfoInputs.cache
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfo.cs
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CoreCompileInputs.cache
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CopyComplete
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.dll
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\refint\PfeShell.dll
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\Akram\Desktop\version code final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\ref\PfeShell.dll
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.deps.json
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.dll
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.pdb
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.xml
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.AssemblyReference.cache
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Controls\ActivityButton.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AddAppointment.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AffichReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Agenda.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjoutDossierReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjouterReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Authentification.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\CreerDossier.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsPage.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsRec.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Disponible.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DisponibleDetails.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\EcheancePage.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeApplTelephonique.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeProspects.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Login.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Maps.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MessageBox.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MoreProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupAgenda.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupIndicator.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectDetails.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Test.xaml.g.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfoInputs.cache
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfo.cs
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CoreCompileInputs.cache
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CopyComplete
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\refint\PfeShell.dll
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\CodeSourcePFE9juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\ref\PfeShell.dll
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.AssemblyReference.cache
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Controls\ActivityButton.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AddAppointment.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AffichReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Agenda.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjoutDossierReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjouterReclamation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Authentification.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\CreerDossier.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsPage.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsRec.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Disponible.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DisponibleDetails.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\EcheancePage.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeApplTelephonique.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeProspects.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Login.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Maps.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MessageBox.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MoreProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupAgenda.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupIndicator.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectDetails.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Test.xaml.g.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\refint\PfeShell.dll
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.deps.json
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.dll
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.pdb
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.xml
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfoInputs.cache
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfo.cs
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CoreCompileInputs.cache
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CopyComplete
+C:\Users\houda\Desktop\CodePFE10juil\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\ref\PfeShell.dll
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.deps.json
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.dll
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.dll
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.pdb
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\bin\Debug\netstandard2.1\Mono.Android.xml
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.AssemblyReference.cache
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Controls\ActivityButton.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AddAppointment.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AffichReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Agenda.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjoutDossierReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\AjouterReclamation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Authentification.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\CreerDossier.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsPage.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DetailsRec.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Disponible.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\DisponibleDetails.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\EcheancePage.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeApplTelephonique.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ListeProspects.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Login.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Maps.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MessageBox.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\MoreProspectionInformation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupAgenda.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\PopupIndicator.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectDetails.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectInformation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\ProspectionInformation.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\Views\Test.xaml.g.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfoInputs.cache
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfo.cs
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CoreCompileInputs.cache
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CopyComplete
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.dll
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\refint\PfeShell.dll
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\Akram\Desktop\code source pfe final\Pfe-Omrane-Estate-V30juin\PfeShell\obj\Debug\netstandard2.1\ref\PfeShell.dll
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\PfeShell.deps.json
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\Mono.Android.dll
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\Mono.Android.pdb
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\bin\Debug\netstandard2.1\Mono.Android.xml
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.AssemblyReference.cache
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\App.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\AppShell.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Controls\ActivityButton.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\AddAppointment.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\AffichReclamation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Agenda.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\AjoutDossierReclamation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\AjouterReclamation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Authentification.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\CreerDossier.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\DetailsPage.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\DetailsRec.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Disponible.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\DisponibleDetails.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\EcheancePage.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\ListeApplTelephonique.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\ListeProspects.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Login.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Maps.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\MessageBox.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\MoreProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\PopupAgenda.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\PopupIndicator.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\ProspectDetails.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\ProspectInformation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\ProspectionInformation.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\Views\Test.xaml.g.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfoInputs.cache
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.AssemblyInfo.cs
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CoreCompileInputs.cache
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\XamlC.stamp
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.csproj.CopyComplete
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.dll
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\refint\PfeShell.dll
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\PfeShell.pdb
+C:\Users\houda\Desktop\codePfe11Juil\Pfe-Omrane-Estate-PFE-22-24\PfeShell\obj\Debug\netstandard2.1\ref\PfeShell.dll

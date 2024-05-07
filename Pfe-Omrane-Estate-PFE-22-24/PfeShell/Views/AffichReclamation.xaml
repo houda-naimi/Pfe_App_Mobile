@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PfeShell.Views.AffichReclamation" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d" BackgroundColor="LightGray">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                     IconImageSource="add.png"  Clicked="ImageButton_Clicked"/>
+        <ToolbarItem IconImageSource="logout.png" Clicked="ToolbarItem_Clicked"  />
+
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+
+
+        <AbsoluteLayout VerticalOptions="FillAndExpand">
+            <RefreshView
+        Command="{Binding RefreshCommand}"
+        IsRefreshing="{Binding IsBusy , Mode=TwoWay}"
+        RefreshColor="OrangeRed">
+                <ScrollView Orientation="Vertical">
+                    <StackLayout  VerticalOptions="Start" HorizontalOptions="Start">
+
+
+                    <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+
+                        
+                            <StackLayout>
+                                <!-- <Frame Grid.Row="0" Style="{StaticResource SearchBarStyle}" Margin="10">
+                                    <SearchBar x:Name="search" FontSize="Small" HeightRequest="30" 
+                                    BackgroundColor="Transparent" Placeholder="Recherche" 
+                                   CancelButtonColor="#6670CC"   PlaceholderColor="#6670CC" 
+                                   HorizontalTextAlignment="Center" TextChanged="search_TextChanged" >
+                                    </SearchBar>
+                                </Frame>-->
+
+                                <!---->
+                                <ListView  x:Name="RecListView"  RowHeight="100" ItemsSource="{Binding reclamationList}" >
+
+                                    <ListView.ItemTemplate>
+                                        <DataTemplate>
+                                            <ViewCell>
+                                                <Grid RowSpacing="30"  >
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="*"/>
+                                                        <ColumnDefinition Width="5"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <BoxView  BackgroundColor="#A0A4C9" Opacity="0.2"  />
+                                                    <StackLayout Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="20">
+                                                        <Label IsVisible="False" Text="{Binding idRec}" x:Name="idRec" FontSize="18" FontAttributes="Bold"  TextColor="#6670CC"/>
+                                                    </StackLayout>
+                                                    <StackLayout Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" Margin="20">
+                                                        <Label Text="{Binding dateRec,StringFormat='{0:d MMM yyyy}'}" x:Name="dateRec" FontSize="18" FontAttributes="Bold"  TextColor="#6670CC"/>
+                                                    </StackLayout>
+                                                    <StackLayout Grid.Column="1" Grid.ColumnSpan="3"  Orientation="Vertical" VerticalOptions="Center"  >
+
+                                                        <Label Text="{Binding nomClient}" FontSize="18"   HorizontalOptions="StartAndExpand" Opacity="0.85"  TextColor="Black"/>
+                                                        <Label  Text="{Binding catRec}"  FontSize="18" Opacity="0.8"  TextColor="Purple"   />
+                                                        <!-- champ categorie -->
+
+                                                    </StackLayout>
+
+                                                    <StackLayout Grid.Column="3" VerticalOptions="Center">
+                                                        <ImageButton Source="info.jpg" Clicked="btnDetails_Clicked"  HeightRequest="25" 
+                                                                     BackgroundColor="Transparent" CommandParameter="{Binding .}"  />
+                                                    </StackLayout>
+
+
+                                                </Grid>
+
+                                                <ViewCell.ContextActions>
+
+                                                    <MenuItem  x:Name="btnEdit" Text="Modifier" Clicked="btnEdit_Clicked"  CommandParameter="{Binding .}" />
+                                                    <MenuItem x:Name="btnSupprimer" Text="Supprimer" Clicked="btnSupprimer_Clicked"  CommandParameter="{Binding .}" />
+                                                    <!-- <MenuItem   x:Name="btnDetails" Text="Détails"  Clicked="btnDetails_Clicked" CommandParameter="{Binding .}" />-->
+
+
+
+
+
+
+                                                </ViewCell.ContextActions>
+
+
+
+
+                                            </ViewCell>
+
+
+
+                                        </DataTemplate>
+
+
+                                    </ListView.ItemTemplate>
+
+                                </ListView>
+
+
+
+                            </StackLayout>
+
+
+                        
+
+
+
+                    </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </RefreshView>
+            <!--<ImageButton Source="add.png" AbsoluteLayout.LayoutBounds="300,600" 
+                         BackgroundColor="Transparent"
+                         WidthRequest="50"
+                         Clicked="ImageButton_Clicked"></ImageButton> -->
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
+

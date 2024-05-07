@@ -1,0 +1,261 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell.iOS\\PfeShell.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell.iOS\\PfeShell.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell.iOS\\PfeShell.iOS.csproj",
+        "projectName": "PfeShell.iOS",
+        "projectPath": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell.iOS\\PfeShell.iOS.csproj",
+        "packagesPath": "C:\\Users\\houda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\houda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\PfeShell.csproj": {
+                "projectPath": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\PfeShell.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Net.Http": {
+              "target": "Package",
+              "version": "[2.2.29, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Sharpnado.CollectionView": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Sharpnado.Forms.HorizontalListView": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
+            "Syncfusion.Xamarin.SfComboBox": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfSchedule": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Xam.Plugins.Messaging": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2478, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[5.0.0.2478, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\PfeShell.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\PfeShell.csproj",
+        "projectName": "PfeShell",
+        "projectPath": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\PfeShell.csproj",
+        "packagesPath": "C:\\Users\\houda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\houda\\Desktop\\codePfe11Juil\\Pfe-Omrane-Estate-PFE-22-24\\PfeShell\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\houda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.Extensions.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "NSwag.ApiDescription.Client": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[13.16.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
+            "Rg.Plugins.Popup": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Sharpnado.CollectionView": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Sharpnado.Forms.HorizontalListView": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
+            "Syncfusion.Xamarin.Buttons": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.Core": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfCalendar": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfComboBox": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfPopupLayout": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Syncfusion.Xamarin.SfSchedule": {
+              "target": "Package",
+              "version": "[20.2.0.36, )"
+            },
+            "Xam.Plugins.Messaging": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.3, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2478, )"
+            },
+            "Xamarin.Forms.Maps": {
+              "target": "Package",
+              "version": "[5.0.0.2478, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
