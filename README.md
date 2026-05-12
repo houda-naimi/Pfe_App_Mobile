@@ -34,7 +34,7 @@ The system:
 
 ---
 
-# Prospect Management
+## Prospect Management
 
 Sales agents can:
 
@@ -50,7 +50,7 @@ Sales agents can:
 
 ---
 
-# Prospecting Management
+## Prospecting Management
 
 The application allows users to:
 
@@ -63,7 +63,7 @@ The application allows users to:
   - Land plots
 ---
 
-# Appointment Management
+## Appointment Management
 
 Available features:
 
@@ -74,7 +74,7 @@ Available features:
 
 ---
 
-# Complaint Management
+## Complaint Management
 
 The after-sales service module allows users to:
 
@@ -85,7 +85,7 @@ The after-sales service module allows users to:
 
 ---
 
-# Payment Deadline Management
+## Payment Deadline Management
 
 Sales agents can:
 
